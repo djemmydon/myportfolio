@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 function Hero() {
+  
+  AOS.init()
+  
   return (
     <Body>
       <div className="hero_section">
-        <div className="text_side">
+        <div data-aos-duration="1000" data-aos="fade-right"  className="text_side">
           <div className="hi_their">
             <p>Hi There I'm Chukwuemeka</p>
           </div>
@@ -26,7 +30,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="image">
+        <div data-aos-duration="1000" data-aos="fade-left"   className="image">
           <img src="/img/gif3.gif" alt="" />
         </div>
       </div>
@@ -43,7 +47,11 @@ const Body = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 
+  @media screen and (max-width: 700px) {
+    margin-top: 4rem;
+    }
   .overlay {
     position: absolute;
     top: 0;
@@ -87,9 +95,12 @@ const Body = styled.div`
 
       p{
         font-size: 13px;
+        text-transform: capitalize;
       }
 
       @media screen and (max-width: 700px) {
+      gap: 18px;
+
         width: 100%;
       margin: 10px;
 
@@ -108,6 +119,19 @@ const Body = styled.div`
         padding: 10px ;
         border-radius: 10px;
       }
+
+      @media screen and (max-width: 400px) {
+      h1{
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 0.6rem;
+      }
+
+      .hi_their{
+        width: 150px;
+      }
+    }
     }
 
     .image {

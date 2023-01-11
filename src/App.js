@@ -1,22 +1,28 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import Navbar from "./Component/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Hero from "./Component/Hero";
+
+import Home from "./Home";
+import ProjectPage from "./ProjectPage";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="">
+    <div className="App">
+       <BrowserRouter>
+      <div className="" >
         <Navbar />
-        <Hero/>
+ 
       </div>
 
       <Routes>
-
+  <Route path="/" element={<Home/>} />
+  <Route path="/work" element={<ProjectPage/>} />
         
       </Routes>
     </BrowserRouter>
+    </div>
+   
   );
 }
 
