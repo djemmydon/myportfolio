@@ -11,12 +11,12 @@ function Navbar() {
   return (
     <Body>
       <div className="nav">
-        <div>
+        <div className="logo">
           <h1>{` </PECULIAR>`}</h1>
         </div>
 
         <div>
-          <Hamburger toggled={open} toggle={setOpen} />
+          <Hamburger toggled={open} toggle={setOpen} size={20} />
         </div>
       </div>
 
@@ -55,6 +55,14 @@ const Body = styled.nav`
   padding: 0;
   position: fixed;
   z-index: 100;
+
+  .logo{
+
+
+    h1{
+      font-size: 1rem;
+    }
+  }
 
   .nav {
     height: 100%;

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
+import { Link } from "react-router-dom";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -32,9 +34,9 @@ function HomeProject() {
       </div>
 
       <div className="button_link">
-        <a href="https://code-to-bank.vercel.app/game/play">
+        <Link to="/work">
           <button>ALL PROJECT DETAILS</button>
-        </a>
+        </Link>
       </div>
 
       <div className="backgroung">
