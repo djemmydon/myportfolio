@@ -27,7 +27,7 @@ function HomeProject() {
             access to the website. It is own by Sterlin bank Nigeria
           </p>
 
-          <a href="https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/function_components/">
+          <a href="https://code-to-bank.vercel.app/game/play">
             <button>Visit</button>
           </a>
         </div>
@@ -56,6 +56,13 @@ const Body = styled.div`
   align-items: center;
   overflow: hidden;
   margin: 1rem 0;
+
+  a{
+    cursor: pointer;
+  }
+  button{
+    cursor: pointer;
+  }
 
   .backgroung {
     position: absolute;

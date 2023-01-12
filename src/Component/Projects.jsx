@@ -7,6 +7,7 @@ const data = [
   {
     name: "CODE TO BANK",
     link: "https://code-to-bank.vercel.app/game/play",
+    git: "https://github.com/djemmydon/code-to-bank",
     problem: "",
     solution: "",
     image: "/img/project1.jpg",
@@ -15,6 +16,7 @@ const data = [
   {
     name: "KINOX APPAREL",
     link: "https://kinoxoriginal.com",
+    git: "https://github.com/djemmydon/kinox-frontend",
     problem: "",
     solution: "",
     image: "/img/project2.jpg",
@@ -25,6 +27,7 @@ const data = [
   {
     name: "PECULIAR ESTATE",
     link: "https://real-estate-eta-seven.vercel.app/",
+    git: "https://github.com/djemmydon/real-estate",
     problem: "",
     solution: "",
     image: "/img/project3.jpg",
@@ -33,6 +36,7 @@ const data = [
   {
     name: "MYRAGE",
     link: "https://myrage321.netlify.app",
+    git: "https://github.com/djemmydon/business_web",
     problem: "",
     solution: "",
     image: "/img/project4.jpg",
@@ -41,6 +45,7 @@ const data = [
   {
     name: "NETFLIX CLONE",
     link: "https://pecuflix.netlify.app/",
+    git: "https://github.com/djemmydon/netflix-clone-2022",
     problem: "",
     solution: "",
     image: "/img/project5.jpg",
@@ -79,8 +84,12 @@ function Projects() {
               </p>
 
               <div className="button_link">
-                <a href={item.link}>
-                  <button>VISIT SITES</button>
+                <a href={item.link} target="_blank" rel="noreferrer">
+                  <button>LIVE</button>
+                        </a>
+                    
+                <a  href={item.git} target="_blank" rel="noreferrer" >
+                  <button className="github">Github</button>
                 </a>
               </div>
             </div>
@@ -95,10 +104,24 @@ export default Projects;
 
 const Body = styled.div`
   padding-top: 10rem;
+  padding-bottom: 5rem;
   color: white;
+  button{
+    cursor: pointer;
+  }
 
   .head {
     margin-left: 2rem;
+
+    @media screen and (max-width:600px) {
+    margin-left: 0.7rem;
+    margin-bottom:2rem;
+
+    h1{
+        font-size: 1rem;
+    }
+        
+    }
     span {
       color: #10e956;
     }
@@ -170,14 +193,24 @@ flex-direction: column;
       }
       p {
         font-size: 0.8rem;
+        margin: 0.8rem 0;
         span {
           color: #10e956;
         }
+      }
+
+      h1{
+        color: #10e956;
+        border: 15px solid #10e956;
+        margin: 1rem 0;
+       letter-spacing: 10px;
+       font-weight: 600;
       }
     }
 
     .button_link {
       margin-top: 40px;
+
       button {
         background-color: #10e956;
         position: relative;
@@ -186,11 +219,16 @@ flex-direction: column;
         border: none;
         border-radius: 10px;
         transition: 0.4s;
+        margin-right: 1rem;
 
         &:hover {
           box-shadow: rgba(20, 233, 86, 0.64) 0px 0px 60px;
           transform: translateY(-10%);
         }
+      }
+
+      .github{
+        background-color: white;
       }
     }
   }

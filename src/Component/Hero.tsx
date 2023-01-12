@@ -22,7 +22,7 @@ function Hero() {
           </div>
           <div className="head_text">
             <p>
-              i am a software engineer with more than four years of experience.
+              i am a software engineer with more than three years of experience.
               recognized as a practical and effective developer, experienced in
               leading cross-functional teams in a time-pressured setting to
               complete projects on schedule and within budget.

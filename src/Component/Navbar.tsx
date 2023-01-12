@@ -11,9 +11,9 @@ function Navbar() {
   return (
     <Body>
       <div className="nav">
-        <div className="logo">
+        <Link to="/" className="logo">
           <h1>{` </PECULIAR>`}</h1>
-        </div>
+        </Link>
 
         <div>
           <Hamburger toggled={open} toggle={setOpen} size={20} />
@@ -57,7 +57,7 @@ const Body = styled.nav`
   z-index: 100;
 
   .logo{
-
+    color: black;
 
     h1{
       font-size: 1rem;
