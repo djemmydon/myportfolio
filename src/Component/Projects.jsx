@@ -8,8 +8,8 @@ const data = [
     name: "CODE TO BANK",
     link: "https://code-to-bank.vercel.app/game/play",
     git: "https://github.com/djemmydon/code-to-bank",
-    problem: "",
-    solution: "",
+    problem: "A Job Applying Website, where user will solve a computational game before having access to apply for a job",
+    solution: "React.js,Styled-Component, and AOS ",
     image: "/img/project1.jpg",
     flex: "row",
   },
@@ -17,8 +17,8 @@ const data = [
     name: "KINOX APPAREL",
     link: "https://kinoxoriginal.com",
     git: "https://github.com/djemmydon/kinox-frontend",
-    problem: "",
-    solution: "",
+    problem: "An Ecommerce website where user can make a order of the brand clothes",
+    solution: "Javascript, React.js, Next.js, Sanity CMS, SASS, Payment Gateway",
     image: "/img/project2.jpg",
     styles: {
       flexDirection: "row-reverse",
@@ -28,8 +28,8 @@ const data = [
     name: "PECULIAR ESTATE",
     link: "https://real-estate-eta-seven.vercel.app/",
     git: "https://github.com/djemmydon/real-estate",
-    problem: "",
-    solution: "",
+    problem: "It a clone website for estate management",
+    solution: "Next.js, React.js, Javascript, Tailwindcss",
     image: "/img/project3.jpg",
     styles: "row"
   },
@@ -37,8 +37,8 @@ const data = [
     name: "MYRAGE",
     link: "https://myrage321.netlify.app",
     git: "https://github.com/djemmydon/business_web",
-    problem: "",
-    solution: "",
+    problem: "My Rage is a crypto website where user can keep track of their crypto currency",
+    solution: "React.js,Css,",
     image: "/img/project4.jpg",
     styles: "row-reverse"
   },
@@ -46,8 +46,8 @@ const data = [
     name: "NETFLIX CLONE",
     link: "https://pecuflix.netlify.app/",
     git: "https://github.com/djemmydon/netflix-clone-2022",
-    problem: "",
-    solution: "",
+    problem: "Netflix Clone it's a website where you can find a netflix movie",
+    solution: "React.js,Css, TMDB",
     image: "/img/project5.jpg",
     styles: "row"
   },
@@ -73,14 +73,10 @@ function Projects() {
             <div className="text">
               <h1>{item.name}</h1>
               <p>
-                <span>Problem:</span> Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Esse corporis molestiae, ducimus doloremque
-                quaerat mollitia perferendis
+                <span>Problem:</span> {item.problem}
               </p>
               <p>
-                <span>Solution:</span> Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Esse corporis molestiae, ducimus doloremque
-                quaerat mollitia perferendis
+                <span>Stack:</span> {item.solution}
               </p>
 
               <div className="button_link">
@@ -201,10 +197,11 @@ flex-direction: column;
 
       h1{
         color: #10e956;
-        border: 15px solid #10e956;
+        border: 2px solid #10e956;
         margin: 1rem 0;
        letter-spacing: 10px;
        font-weight: 600;
+       padding-left: 0.4rem;
       }
     }
 
